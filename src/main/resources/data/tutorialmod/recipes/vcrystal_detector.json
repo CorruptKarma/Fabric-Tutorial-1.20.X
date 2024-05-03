@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "oZ#",
+    "ZYZ",
+    "XZo"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:voidamethyst"
+    },
+    "X": {
+      "item": "tutorialmod:voidcrystal"
+    },
+    "Y": {
+      "item": "minecraft:compass"
+    },
+    "Z": {
+      "item": "minecraft:redstone"
+    },
+    "o": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+
+  "result": {
+    "item": "tutorialmod:vcrystal_detector",
+    "count": 1
+  }
+}

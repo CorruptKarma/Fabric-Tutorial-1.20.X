@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+      "tutorialmod:voidcrystal_block",
+      "tutorialmod:void_ore"
+  ]
+}

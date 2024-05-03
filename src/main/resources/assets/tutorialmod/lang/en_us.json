@@ -1,3 +1,19 @@
 {
-  "item.tutorialmod.voidcrystal": "Void Crystal"
+  "item.tutorialmod.voidcrystal": "Void Crystal",
+  "item.tutorialmod.void_ingot": "Void Ingot",
+  "item.tutorialmod.iron_cassing": "Iron Cassing",
+  "item.tutorialmod.voidamethyst": "Void Amethyst",
+  "item.tutorialmod.vcrystal_detector": "Void Crystal Detector",
+  "item.tutorialmod.void_infused_pearl": "Void Infused Pearl",
+
+  "block.tutorialmod.voidcrystal_block": "Block of Void",
+  "block.tutorialmod.void_ore":"Void Ore",
+
+  "item.minecraft.potion.effect.void_potion": "Void Potion",
+  "item.minecraft.splash_potion.effect.void_potion": "Splash Potion of Void",
+  "item.minecraft.lingering_potion.effect.void_potion": "Lingering Potion of Void",
+
+  "tooltip.tutorialmod.vcrystal_detector.tooltip": "Finds where the void ores are located",
+
+  "itemgroup.voidcrystal": "Void Crystal Group"
 }
