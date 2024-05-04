@@ -16,8 +16,11 @@ public class ModItems {
     public static final Item VoidCrystal = registerItem("voidcrystal", new Item(new FabricItemSettings()));
     public static final Item VoidAmethyst = registerItem("voidamethyst", new Item(new FabricItemSettings()));
     public static final Item Void_infused_Pearl = registerItem("void_infused_pearl", new Item(new FabricItemSettings()));
-    public static final Item Iron_Cassing = registerItem("iron_cassing", new Item(new FabricItemSettings()));
     public static final Item VOID_INGOT = registerItem("void_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item Iron_Cassing = registerItem("iron_cassing", new Item
+            (new FabricItemSettings()));
+
 
     public static final Item VCrystal_Detector = registerItem("vcrystal_detector",
             new VCrystal_DetectorItem(new FabricItemSettings().maxDamage(200)));
