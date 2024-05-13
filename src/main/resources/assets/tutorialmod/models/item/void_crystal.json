@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures":{
-    "layer0": "tutorialmod:item/voidamethyst"
+    "layer0": "tutorialmod:item/void_crystal"
   }
 }

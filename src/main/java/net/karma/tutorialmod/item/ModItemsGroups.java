@@ -19,9 +19,9 @@ public class ModItemsGroups {
     public static final ItemGroup VoidCrystal_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "voidcrystal"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.voidcrystal"))
-                    .icon(() -> new ItemStack(ModItems.VoidCrystal)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.VoidCrystal);
-                        entries.add(ModItems.VoidAmethyst);
+                    .icon(() -> new ItemStack(ModItems.Void_Crystal)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.Void_Crystal);
+                        entries.add(ModItems.Void_Amethyst);
                         entries.add(ModItems.Void_infused_Pearl);
                         entries.add(ModItems.Iron_Cassing);
                         entries.add(ModItems.VCrystal_Detector);

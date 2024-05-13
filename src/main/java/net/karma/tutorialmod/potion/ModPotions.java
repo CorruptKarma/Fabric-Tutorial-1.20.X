@@ -30,7 +30,7 @@ public class ModPotions {
     }
 
     private static void registerPotionRecipes() {
-        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.WATER, ModItems.VoidCrystal,
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.WATER, ModItems.Void_Crystal,
                 ModPotions.VOID_POTION);
     }
 }

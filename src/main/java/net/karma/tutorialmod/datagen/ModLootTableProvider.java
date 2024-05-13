@@ -14,7 +14,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlock.VoidCrystal_BLOCK);
 
-        addDrop(ModBlock.Void_Ore, oreDrops(ModBlock.Void_Ore, ModItems.VoidCrystal));
+        addDrop(ModBlock.Void_Ore, oreDrops(ModBlock.Void_Ore, ModItems.Void_Crystal));
 
     }
 }
