@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:void_ore"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tutorialmod:void_crystal"
+  }
+}
