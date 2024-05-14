@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "tutorialmod:iron_cassing"
+    },
+    "S": {
+      "item": "tutorialmod:void_infused_pearl"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "item": "tutorialmod:void_ingot"
+  },
+  "show_notification": true
+}
