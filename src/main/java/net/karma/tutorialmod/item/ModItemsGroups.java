@@ -17,8 +17,8 @@ import net.minecraft.util.Identifier;
 public class ModItemsGroups {
 
     public static final ItemGroup VoidCrystal_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(TutorialMod.MOD_ID, "voidcrystal"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.voidcrystal"))
+            new Identifier(TutorialMod.MOD_ID, "void_crystal"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.void_crystal"))
                     .icon(() -> new ItemStack(ModItems.Void_Crystal)).entries((displayContext, entries) -> {
                         entries.add(ModItems.Void_Crystal);
                         entries.add(ModItems.Void_Amethyst);

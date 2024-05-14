@@ -13,7 +13,8 @@
   "item.minecraft.splash_potion.effect.void_potion": "Splash Potion of Void",
   "item.minecraft.lingering_potion.effect.void_potion": "Lingering Potion of Void",
 
-  "tooltip.tutorialmod.vcrystal_detector.tooltip": "Finds where the void ores are located",
+  "tooltip.tutorialmod.vcrystal_detector.tooltip": "Finds where the void ore is located",
+  "tooltip.tutorialmod.cassingItem.tooltip": "used to make void ingots",
 
-  "itemgroup.voidcrystal": "Void Crystal Group"
+  "itemgroup.void_crystal": "Void Crystal Group"
 }

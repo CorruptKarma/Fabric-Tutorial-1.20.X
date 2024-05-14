@@ -24,9 +24,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlock.Void_Ore)
                 .add(ModBlock.VoidCrystal_BLOCK);
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlock.Void_Ore);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlock.VoidCrystal_BLOCK);
         getOrCreateTagBuilder(TagKey
                 .of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
-                .add(ModBlock.VoidCrystal_BLOCK);
+                .add(ModBlock.Void_Ore);
     }
 }
