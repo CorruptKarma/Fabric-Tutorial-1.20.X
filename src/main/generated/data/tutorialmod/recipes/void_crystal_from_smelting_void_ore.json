@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 7.5,
+  "group": "void_crystal",
+  "ingredient": {
+    "item": "tutorialmod:void_ore"
+  },
+  "result": "tutorialmod:void_crystal"
+}
