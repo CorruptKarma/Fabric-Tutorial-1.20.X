@@ -26,6 +26,5 @@ public class ModModelProvider extends FabricModelProvider {
             itemModelGenerator.register(ModItems.Void_infused_Pearl, Models.GENERATED);
             itemModelGenerator.register(ModItems.VOID_INGOT, Models.GENERATED);
             itemModelGenerator.register(ModItems.VCrystal_Detector, Models.GENERATED);
-            itemModelGenerator.register(ModItems.Iron_Cassing, Models.GENERATED);
     }
 }
