@@ -6,6 +6,12 @@
 		"ExampleMixin",
 		"BrewingRecipeRegistryMixin"
 	],
+	"client": [
+		"ItemRendererAccessor",
+		"ItemRendererMixin",
+		"ModelLoaderMixin",
+		"BlocksMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	}

@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_void_ore": {
+    "has_voidcrystal_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "tutorialmod:void_ore"
+              "tutorialmod:voidcrystal_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_void_ore",
+      "has_voidcrystal_block",
       "has_the_recipe"
     ]
   ],

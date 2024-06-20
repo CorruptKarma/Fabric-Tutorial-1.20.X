@@ -3,8 +3,17 @@
   "item.tutorialmod.void_ingot": "Void Ingot",
   "item.tutorialmod.iron_cassing": "Iron Cassing",
   "item.tutorialmod.void_amethyst": "Void Amethyst",
+  "item.tutorialmod.void_pickaxe": "Void Pickaxe",
   "item.tutorialmod.vcrystal_detector": "Void Crystal Detector",
   "item.tutorialmod.void_infused_pearl": "Void Infused Pearl",
+  "item.tutorialmod.bedrock_dust": "Bedrock Dust",
+
+  "item.tutorialmod.karma_scythe": "Karma Scythe",
+
+  "item.tutorialmod.karmic_helmet": "Karmic Helmet",
+  "item.tutorialmod.karmic_chestplate": "Karmic Chestplate",
+  "item.tutorialmod.karmic_leggings": "Karmic Leggings",
+  "item.tutorialmod.karmic_boots": "Karmic Boots",
 
   "block.tutorialmod.voidcrystal_block": "Block of Void",
   "block.tutorialmod.void_ore":"Void Ore",

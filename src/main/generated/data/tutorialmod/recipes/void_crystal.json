@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "tutorialmod:void_ore"
+      "item": "tutorialmod:voidcrystal_block"
     }
   ],
   "result": {

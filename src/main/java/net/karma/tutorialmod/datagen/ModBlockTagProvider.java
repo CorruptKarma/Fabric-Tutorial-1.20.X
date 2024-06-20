@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.karma.tutorialmod.block.ModBlock;
 import net.karma.tutorialmod.util.ModTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -25,8 +26,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlock.Void_Ore)
                 .add(ModBlock.VoidCrystal_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlock.VoidCrystal_BLOCK);
-        getOrCreateTagBuilder(TagKey
-                .of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
+                new Identifier("fabric","needs_tool_level_4")))
                 .add(ModBlock.Void_Ore);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
+                new Identifier("fabric","needs_tool_level_5")))
+                .add(Blocks.BEDROCK);
     }
 }

@@ -33,4 +33,6 @@ public class ModPotions {
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.WATER, ModItems.Void_Crystal,
                 ModPotions.VOID_POTION);
     }
+
+
 }

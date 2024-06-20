@@ -26,6 +26,14 @@ public class ModItemsGroups {
                         entries.add(ModItems.Iron_Cassing);
                         entries.add(ModItems.VCrystal_Detector);
                         entries.add(ModItems.VOID_INGOT);
+                        entries.add(ModItems.VOID_PICKAXE);
+                        entries.add(ModItems.BEDROCK_DUST);
+                        entries.add(ModItems.KARMA_SCYTHE);
+
+                        entries.add(ModItems.KARMIC_HELMET);
+                        entries.add(ModItems.KARMIC_CHESTPLATE);
+                        entries.add(ModItems.KARMIC_LEGGINGS);
+                        entries.add(ModItems.KARMIC_BOOTS);
 
                         entries.add(PotionUtil.setPotion(new ItemStack(Items.POTION), ModPotions.VOID_POTION));
                         entries.add(PotionUtil.setPotion(new ItemStack(Items.SPLASH_POTION), ModPotions.VOID_POTION));
