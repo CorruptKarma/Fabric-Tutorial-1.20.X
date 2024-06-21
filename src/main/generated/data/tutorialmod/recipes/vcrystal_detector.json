@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:compass"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "tutorialmod:void_infused_pearl"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "ARI",
+    "RDR",
+    "CRA"
+  ],
+  "result": {
+    "item": "tutorialmod:vcrystal_detector"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "V": {
+      "item": "tutorialmod:void_crystal"
+    }
+  },
+  "pattern": [
+    " A ",
+    "AVA",
+    " A "
+  ],
+  "result": {
+    "item": "tutorialmod:void_amethyst"
+  },
+  "show_notification": true
+}

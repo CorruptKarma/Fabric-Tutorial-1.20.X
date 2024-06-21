@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:karmic_helmet",
+    "tutorialmod:karmic_chestplate",
+    "tutorialmod:karmic_leggings",
+    "tutorialmod:karmic_boots"
+  ]
+}

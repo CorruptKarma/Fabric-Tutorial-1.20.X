@@ -7,7 +7,7 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
 
 public class ShadowJawsRenderer extends EntityRenderer<ShadowJawsEntity> {
-    public static final Identifier TEXTURE = new Identifier(TutorialMod.MOD_ID, "textures/entity/shadowjaw");
+    public static final Identifier TEXTURE = new Identifier(TutorialMod.MOD_ID, "textures/entity/shadowjaw.png");
 
     public ShadowJawsRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);

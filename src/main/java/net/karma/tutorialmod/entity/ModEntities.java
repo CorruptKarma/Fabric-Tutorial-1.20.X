@@ -14,4 +14,9 @@ public class ModEntities {
             new Identifier(TutorialMod.MOD_ID, "shadowjaw"),
             FabricEntityTypeBuilder.create(EntityType.EVOKER_FANGS.getSpawnGroup(),
                     ShadowJawsEntity::new).dimensions(EntityDimensions.fixed(0.8f, 0.8f)).build());
+
+    public static void registerModEntities() {
+        TutorialMod.LOGGER.debug("Registering Mod Entities for " + TutorialMod.MOD_ID);
+    }
+
 }
