@@ -14,15 +14,15 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item Void_Crystal = registerItem("void_crystal", new Item(new FabricItemSettings()));
-    public static final Item Void_Amethyst = registerItem("void_amethyst", new Item(new FabricItemSettings()));
-    public static final Item Void_infused_Pearl = registerItem("void_infused_pearl", new Item(new FabricItemSettings()));
+    public static final Item VOID_CRYSTAL = registerItem("void_crystal", new Item(new FabricItemSettings()));
+    public static final Item VOID_AMETHYST = registerItem("void_amethyst", new Item(new FabricItemSettings()));
+    public static final Item VOID_INFUSED_PEARL = registerItem("void_infused_pearl", new Item(new FabricItemSettings()));
     public static final Item VOID_INGOT = registerItem("void_ingot", new Item(new FabricItemSettings()));
     public static final Item BEDROCK_DUST = registerItem("bedrock_dust", new Item(new FabricItemSettings()));
 
-    public static final Item Iron_Cassing =  registerItem("iron_cassing", new cassingItem(new FabricItemSettings().maxDamage(100)));
+    public static final Item IRON_CASSING =  registerItem("iron_cassing", new cassingItem(new FabricItemSettings().maxDamage(100)));
 
-    public static final Item VCrystal_Detector = registerItem("vcrystal_detector",
+    public static final Item VCRYSTAL_DETECTOR = registerItem("vcrystal_detector",
             new VCrystal_DetectorItem(new FabricItemSettings().maxDamage(200)));
 
     public static final Item KARMA_SCYTHE= registerItem("karma_scythe",

@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     VOID(5, 4000, 24.0f, 8.0f, 30,
-            () -> Ingredient.ofItems(ModItems.Void_Crystal));
+            () -> Ingredient.ofItems(ModItems.VOID_CRYSTAL));
 
     private final int mininglevel;
     private final int itemDurability;

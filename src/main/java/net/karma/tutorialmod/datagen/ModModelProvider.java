@@ -22,12 +22,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-            itemModelGenerator.register(ModItems.Void_Crystal, Models.GENERATED);
-            itemModelGenerator.register(ModItems.Void_Amethyst, Models.GENERATED);
-            itemModelGenerator.register(ModItems.Void_infused_Pearl, Models.GENERATED);
+            itemModelGenerator.register(ModItems.VOID_CRYSTAL, Models.GENERATED);
+            itemModelGenerator.register(ModItems.VOID_AMETHYST, Models.GENERATED);
+            itemModelGenerator.register(ModItems.VOID_INFUSED_PEARL, Models.GENERATED);
             itemModelGenerator.register(ModItems.VOID_INGOT, Models.GENERATED);
-            itemModelGenerator.register(ModItems.VCrystal_Detector, Models.GENERATED);
-            itemModelGenerator.register(ModItems.Iron_Cassing, Models.GENERATED);
+            itemModelGenerator.register(ModItems.VCRYSTAL_DETECTOR, Models.GENERATED);
+            itemModelGenerator.register(ModItems.IRON_CASSING, Models.GENERATED);
             itemModelGenerator.register(ModItems.VOID_PICKAXE, Models.HANDHELD);
             itemModelGenerator.register(ModItems.BEDROCK_DUST, Models.GENERATED);
 
