@@ -24,6 +24,7 @@ public class ShadowJawsEntity extends EvokerFangsEntity {
         super(type, world);
     }
 
+
     @Override
     public void tick() {
         super.tick();
@@ -31,14 +32,14 @@ public class ShadowJawsEntity extends EvokerFangsEntity {
             if (this.playingAnimation) {
                 --this.ticksLeft;
                 if (this.ticksLeft == 14) {
-                    for(int i = 0; i < 12; ++i) {
+                    for(int i = 0; i < 15; ++i) {
                         double d = this.getX() + (this.random.nextDouble() * 2.0 - 1.0) * (double)this.getWidth() * 0.5;
                         double e = this.getY() + 0.05 + this.random.nextDouble();
                         double f = this.getZ() + (this.random.nextDouble() * 2.0 - 1.0) * (double)this.getWidth() * 0.5;
                         double g = (this.random.nextDouble() * 2.0 - 1.0) * 0.3;
                         double h = 0.3 + this.random.nextDouble() * 0.3;
                         double j = (this.random.nextDouble() * 2.0 - 1.0) * 0.3;
-                        this.getWorld().addParticle(ParticleTypes.WITCH, d, e + 1.0, f, g, h, j);
+                        this.getWorld().addParticle(ParticleTypes.SCULK_SOUL, d, e + 1.0, f, g, h, j);
                     }
                 }
             }
@@ -75,7 +76,7 @@ public class ShadowJawsEntity extends EvokerFangsEntity {
         if (status == EntityStatuses.PLAY_ATTACK_SOUND) {
             this.playingAnimation = true;
             if (!this.isSilent()) {
-                this.getWorld().playSound(this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_WARDEN_SONIC_BOOM, this.getSoundCategory(), 1.0f, this.random.nextFloat() * 0.2f + 0.85f, false);
+                this.getWorld().playSound(this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_WARDEN_SONIC_BOOM, this.getSoundCategory(), 2f, this.random.nextFloat() * 0.2f + 0.85f, false);
             }
         }
     }

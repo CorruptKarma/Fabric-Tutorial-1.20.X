@@ -1,5 +1,6 @@
 package net.karma.tutorialmod.item.custom;
 
+import net.karma.tutorialmod.entity.ModEntities;
 import net.karma.tutorialmod.item.ModToolMaterial;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.EvokerFangsEntity;
@@ -28,7 +29,7 @@ public class FangScythe extends SwordItem {
                 double radians = Math.toRadians(angle);
                 Vec3d spawnPos = playerPos.add(Math.sin(radians) * 2, 0, Math.cos(radians) * 2);
 
-                EvokerFangsEntity fang = new EvokerFangsEntity(EntityType.EVOKER_FANGS, world);
+                EvokerFangsEntity fang = new EvokerFangsEntity(ModEntities.SHADOWJAW, world);
                 fang.refreshPositionAndAngles(spawnPos.x, spawnPos.y, spawnPos.z, player.getYaw(), player.getPitch());
                 fang.setOwner(player);
                 world.spawnEntity(fang);

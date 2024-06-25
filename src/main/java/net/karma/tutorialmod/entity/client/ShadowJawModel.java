@@ -1,33 +1,25 @@
 package net.karma.tutorialmod.entity.client;
 
-import net.karma.tutorialmod.entity.ModEntities;
-import net.karma.tutorialmod.entity.animation.ModAnimations;
-import net.karma.tutorialmod.entity.custom.ShadowJawsEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
+import org.joml.AxisAngle4f;
+import org.joml.Quaternionf;
 
-
-public class ShadowJawModel<T extends ShadowJawsEntity> extends EntityModel<Entity> {
-	private ModelPart jaws;
-	private ModelPart jaws2;
-	private ModelPart jaws1;
-	private ModelPart pentagram;
-	public void ShadowJaw(ModelPart root) {
+public class ShadowJawModel extends EntityModel<Entity> {
+	private final ModelPart jaws;
+	private final ModelPart jaws2;
+	private final ModelPart jaws1;
+	private final ModelPart pentagram;
+	public ShadowJawModel(ModelPart root) {
 		this.jaws = root.getChild("jaws");
 		this.jaws2 = root.getChild("jaws2");
 		this.jaws1 = root.getChild("jaws1");
 		this.pentagram = root.getChild("pentagram");
 	}
 
-    public ShadowJawModel(ModelPart jaws, ModelPart jaws2, ModelPart jaws1, ModelPart pentagram) {
-        this.jaws = jaws;
-        this.jaws2 = jaws2;
-        this.jaws1 = jaws1;
-        this.pentagram = pentagram;
-    }
 
     public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
@@ -47,11 +39,15 @@ public class ShadowJawModel<T extends ShadowJawsEntity> extends EntityModel<Enti
 	}
 	@Override
 	public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+		this.
 	}
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
+		matrices.push();
+		matrices.multiply(new Quaternionf(new AxisAngle4f(0, 1, 0, (float) Math.PI)));
 		jaws.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 		pentagram.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
+		matrices.pop();
 	}
+
 }
