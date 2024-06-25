@@ -29,7 +29,7 @@ public class FangScythe extends SwordItem {
                 double radians = Math.toRadians(angle);
                 Vec3d spawnPos = playerPos.add(Math.sin(radians) * 2, 0, Math.cos(radians) * 2);
 
-                EvokerFangsEntity fang = new EvokerFangsEntity(ModEntities.SHADOWJAW, world);
+                EvokerFangsEntity fang = new EvokerFangsEntity(ModEntities.SHADOW_JAW, world);
                 fang.refreshPositionAndAngles(spawnPos.x, spawnPos.y, spawnPos.z, player.getYaw(), player.getPitch());
                 fang.setOwner(player);
                 world.spawnEntity(fang);

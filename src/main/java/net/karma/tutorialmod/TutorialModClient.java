@@ -7,13 +7,12 @@ import net.karma.tutorialmod.entity.ModEntities;
 import net.karma.tutorialmod.entity.client.ModModelLayers;
 import net.karma.tutorialmod.entity.client.ShadowJawModel;
 import net.karma.tutorialmod.entity.client.ShadowJawsRenderer;
-import net.karma.tutorialmod.entity.custom.ShadowJawsEntity;
 
 public class TutorialModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        EntityRendererRegistry.register(ModEntities.SHADOW_JAW, ShadowJawsRenderer::new);
 
-        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SHADOWJAW, ShadowJawModel::getTexturedModelData);
-        EntityRendererRegistry.register(ModEntities.SHADOWJAW, (context) -> new ShadowJawsRenderer(context, ModModelLayers.SHADOWJAW));
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SHADOW_JAW, ShadowJawModel::getTexturedModelData);
     }
 }

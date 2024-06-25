@@ -11,13 +11,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEntities {
-    public static final EntityType<ShadowJawsEntity> SHADOWJAW = Registry.register(Registries.ENTITY_TYPE,
+    public static final EntityType<ShadowJawsEntity> SHADOW_JAW = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TutorialMod.MOD_ID, "shadowjaw"),
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, ShadowJawsEntity::new)
                     .dimensions(EntityDimensions.fixed(0.8f, 0.8f))
                     .build());
 
     public static void RegisterEntities() {
+
         TutorialMod.LOGGER.info("Registering Entity for" + TutorialMod.MOD_ID);
     }
 

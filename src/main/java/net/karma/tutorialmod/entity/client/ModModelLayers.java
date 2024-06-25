@@ -7,10 +7,11 @@ import net.minecraft.client.render.entity.model.EvokerFangsEntityModel;
 import net.minecraft.util.Identifier;
 
 public class ModModelLayers {
-    public static final EntityModelLayer SHADOWJAW =
-            new EntityModelLayer(new Identifier(TutorialMod.MOD_ID, "shadowjaw"), "main");
+    public static final EntityModelLayer SHADOW_JAW =
+            new EntityModelLayer(new Identifier(TutorialMod.MOD_ID, "shadow_jaw"), "main");
 
-    public static void registerLayerDefinitions() {
-        EntityModelLayerRegistry.registerModelLayer(SHADOWJAW, EvokerFangsEntityModel::getTexturedModelData);
+    public static void registerModModelLayers() {
+        TutorialMod.LOGGER.info("Registering Model layer for" + TutorialMod.MOD_ID);
     }
+
 }
