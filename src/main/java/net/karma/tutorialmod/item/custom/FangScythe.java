@@ -2,7 +2,6 @@ package net.karma.tutorialmod.item.custom;
 
 import net.karma.tutorialmod.entity.ModEntities;
 import net.karma.tutorialmod.item.ModToolMaterial;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.EvokerFangsEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
