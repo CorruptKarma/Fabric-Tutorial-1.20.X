@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    VOID(5, 4000, 24.0f, 8.0f, 30,
+    VOID(5, 4000, 20.0f, 8.0f, 30,
             () -> Ingredient.ofItems(ModItems.VOID_CRYSTAL));
 
     private final int mininglevel;

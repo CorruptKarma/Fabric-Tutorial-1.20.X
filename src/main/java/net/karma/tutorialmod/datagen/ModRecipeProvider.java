@@ -17,7 +17,7 @@ import java.util.List;
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     public static final List<ItemConvertible> SMELTABLES = List.of(ModItems.VOID_AMETHYST);
-    public static final List<ItemConvertible> VOID_SMELTABLES = List.of(ModBlock.Void_Ore);
+    public static final List<ItemConvertible> VOID_SMELTABLES = List.of(ModBlock.VOID_ORE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);

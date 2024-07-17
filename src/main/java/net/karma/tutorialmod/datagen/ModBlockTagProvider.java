@@ -21,14 +21,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS)
-                .add(ModBlock.Void_Ore);
+                .add(ModBlock.VOID_ORE);
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlock.Void_Ore)
+                .add(ModBlock.VOID_ORE)
                 .add(ModBlock.VoidCrystal_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlock.VoidCrystal_BLOCK);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
                 new Identifier("fabric","needs_tool_level_4")))
-                .add(ModBlock.Void_Ore);
+                .add(ModBlock.VOID_ORE);
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK,
                 new Identifier("fabric","needs_tool_level_5")))
                 .add(Blocks.BEDROCK);

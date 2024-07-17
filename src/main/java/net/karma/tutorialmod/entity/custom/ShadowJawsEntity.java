@@ -59,7 +59,7 @@ public class ShadowJawsEntity extends EvokerFangsEntity {
             }
 
             if (!this.startedAttack) {
-                this.getWorld().sendEntityStatus(this, EntityStatuses.PLAY_GUARDIAN_ATTACK_SOUND);
+                this.getWorld().sendEntityStatus(this, EntityStatuses.PLAY_ATTACK_SOUND);
                 this.startedAttack = true;
             }
 
@@ -76,7 +76,7 @@ public class ShadowJawsEntity extends EvokerFangsEntity {
         if (status == EntityStatuses.PLAY_ATTACK_SOUND) {
             this.playingAnimation = true;
             if (!this.isSilent()) {
-                this.getWorld().playSound(this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_WARDEN_SONIC_BOOM, this.getSoundCategory(), 2f, this.random.nextFloat() * 0.2f + 0.85f, false);
+                this.getWorld().playSound(this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_WARDEN_SONIC_BOOM, this.getSoundCategory(), 0.5f, this.random.nextFloat() * 0.2f + 0.85f, false);
             }
         }
     }

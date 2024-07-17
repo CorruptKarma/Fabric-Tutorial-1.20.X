@@ -5,19 +5,17 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.karma.tutorialmod.TutorialMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlock {
     public static final Block VoidCrystal_BLOCK = registerBlock("voidcrystal_block",
             new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block Void_Ore = registerBlock("void_ore",
+    public static final Block VOID_ORE = registerBlock("void_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)
                     .sounds(BlockSoundGroup.GLASS)));
 

@@ -40,7 +40,7 @@ public class ModItemsGroups {
                         entries.add(PotionUtil.setPotion(new ItemStack(Items.LINGERING_POTION), ModPotions.VOID_POTION));
 
                         entries.add(ModBlock.VoidCrystal_BLOCK);
-                        entries.add(ModBlock.Void_Ore);
+                        entries.add(ModBlock.VOID_ORE);
 
 
                     }).build());
