@@ -1,6 +1,8 @@
 package net.karma.tutorialmod;
 
+import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.karma.tutorialmod.block.ModBlock;
 import net.karma.tutorialmod.entity.ModEntities;
 import net.karma.tutorialmod.entity.client.ModModelLayers;
@@ -23,6 +25,6 @@ public class TutorialMod implements ModInitializer {
 		ModBlock.registerModBlock();
 		ModPotions.registerPotions();
 		ModEntities.RegisterEntities();
-		ModModelLayers.registerModModelLayers();
+
 	}
 }

@@ -1,6 +1,5 @@
 package net.karma.tutorialmod.world;
 
-import net.minecraft.world.gen.feature.OrePlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;

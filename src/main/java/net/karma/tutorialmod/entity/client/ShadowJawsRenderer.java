@@ -11,7 +11,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.RotationAxis;
 
-@SuppressWarnings("ALL")
+
 public class ShadowJawsRenderer extends EntityRenderer<ShadowJawsEntity> {
 
     private static final Identifier TEXTURE = new Identifier(TutorialMod.MOD_ID, "textures/entity/shadowjaw.png");
@@ -20,33 +20,40 @@ public class ShadowJawsRenderer extends EntityRenderer<ShadowJawsEntity> {
     public ShadowJawsRenderer(EntityRendererFactory.Context context) {
         super(context);
         this.model = new ShadowJawModel(context.getPart(ModModelLayers.SHADOW_JAW));
+        if (this.model == null) {
+            throw new IllegalStateException("ShadowJawModel is not initialized properly!");
+        }
     }
 
-    public void render(ShadowJawsEntity Entity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
-        float h = Entity.getAnimationProgress(g);
-        if (h == 0.0f) {
+    public void render(ShadowJawsEntity entity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+        float animationProgress = entity.getAnimationProgress(g);
+        if (animationProgress == 0.0f) {
             return;
         }
-        float j = 2.0f;
-        if (h > 0.9f) {
-            j *= (1.0f - h) / 0.1f;
+        float scale = 2.0f;
+        if (animationProgress > 0.9f) {
+            scale *= (1.0f - animationProgress) / 0.1f;
         }
+
         matrixStack.push();
-        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(90.0f - Entity.getYaw()));
-        matrixStack.scale(-j, -j, j);
-        float k = 0.03125f;
+        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(90.0f - entity.getYaw()));
+        matrixStack.scale(-scale, -scale, scale);
         matrixStack.translate(0.0, -0.626, 0.0);
         matrixStack.scale(0.5f, 0.5f, 0.5f);
-        this.model.setAngles(Entity, h, 0.0f, 0.0f, Entity.getYaw(), Entity.getPitch());
+        this.model.setAngles(entity, animationProgress, 0.0f, 0.0f, entity.getYaw(), entity.getPitch());
+
         VertexConsumer vertexConsumer = vertexConsumerProvider.getBuffer(this.model.getLayer(TEXTURE));
+        if (vertexConsumer == null) {
+            throw new IllegalStateException("VertexConsumer is not initialized properly!");
+        }
+
         this.model.render(matrixStack, vertexConsumer, i, OverlayTexture.DEFAULT_UV, 1.0f, 1.0f, 1.0f, 1.0f);
         matrixStack.pop();
-        super.render(Entity, f, g, matrixStack, vertexConsumerProvider, i);
+        super.render(entity, f, g, matrixStack, vertexConsumerProvider, i);
     }
 
     @Override
     public Identifier getTexture(ShadowJawsEntity entity) {
-
         return TEXTURE;
     }
 }
